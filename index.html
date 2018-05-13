@@ -1,10 +1,285 @@
-<!DOCTYPE html>
 <html>
- <head>
-  <meta "charset=utf-8">
-  <title>Пример веб-страницы</title>
- </head>
- <body>
-  <h1>ТЕСТ</h1>
- </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Электроник</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div class="wr index-wr">
+    <header>
+        <div class="container">
+            <div class="top-panel">
+                <div class="logo">
+                    <h3>Интернет магазин</h3>
+                    <h1>Электроник</h1>
+                </div>
+                <div class="entry">
+                    <a href="entryform.html">Вход</a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Каталог</a>
+                </li>
+                <li>
+                    <a href="about.html">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Акции</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <section>
+                <div class="slider-wr">
+                    <h3>Товары со скидкой</h3>
+                    <div id="slider-track">
+                        <div class="slider">
+                                <div class="slide">
+                                    <img src="t1.jpg" alt="img">
+                                    <ul>
+                                        <img class="sale" src="sale.png" alt="img">
+                                        <li><H3>Ноутбук ASUS X756UQ-T4332D</H3></li>
+                                        <li>оценка: 9.5/10</li>
+                                        <li>
+                                            <div>
+                                                <p class="rub"><del>40.000 ₽</del> 39.999 ₽</p>
+                                                <input type="button" value="в корзину">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+								<div class="slide">
+                                    <img src="t2.jpg" alt="img">
+                                    <ul>
+                                        <img class="sale" src="sale.png" alt="img">
+                                        <li><H3>Монитор Samsung U28E590D</H3></li>
+                                        <li>оценка: 9.9/10</li>
+                                        <li>
+                                            <div>
+                                                <p class="rub"><del>17.000 ₽</del> 17.999 ₽</p>
+                                                <input type="button" value="в корзину">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+								<div class="slide">
+                                    <img src="t3.jpg" alt="img">
+                                    <ul>
+                                        <img class="sale" src="sale.png" alt="img">
+                                        <li><H3>Смартфон Huawei P20 Lite 64 ГБ</H3></li>
+                                        <li>оценка: 1.1/10</li>
+                                        <li>
+                                            <div>
+                                                <p class="rub"><del>21.000 ₽</del> 19.999 ₽</p>
+                                                <input type="button" value="в корзину">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+								<div class="slide">
+                                    <img src="t4.jpg" alt="img">
+                                    <ul>
+                                        <img class="sale" src="sale.png" alt="img">
+                                        <li><H3>Смартфон Android iPhone 10x Plus</H3></li>
+                                        <li>оценка: 11/10</li>
+                                        <li>
+                                            <div>
+                                                <p class="rub"><del> 00.000 ₽ </del> 99.999 ₽</p>
+                                                <input type="button" value="в корзину">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+								<div class="slide">
+                                    <img src="t5.jpg" alt="img">
+                                    <ul>
+                                        <img class="sale" src="sale.png" alt="img">
+                                        <li><H3>ПК DEXP Mars E186</H3></li>
+                                        <li>оценка: 5/10</li>
+                                        <li>
+                                            <div>
+                                                <p class="rub"><del>32.000 ₽</del> 29.999 ₽</p>
+                                                <input type="button" value="в корзину">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <input type="button" value="Влево" id="prew">
+                    <input type="button" value="Вправо" id="next">
+                </div>
+            </section>
+
+            <section>
+                <div class="slider-wr">
+                    <h3>Самое продаваемое</h3>
+                    <div id="slider-track1">
+                        <div class="slider">
+                            <div class="slide">
+                                    <img src="t4.jpg" alt="img">
+                                    <ul>
+                                        <img class="sale" src="sale.png" alt="img">
+                                        <li><H3>Смартфон Android iPhone 10x Plus</H3></li>
+                                        <li>оценка: 11/10</li>
+                                        <li>
+                                            <div>
+                                                <p class="rub"><del> 00.000 ₽ </del> 99.999 ₽</p>
+                                                <input type="button" value="в корзину">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+							<div class="slide">
+                                    <img src="t6.jpg" alt="img">
+                                    <ul>
+                                        <li><H3>Монитор LG 29WK600-W</H3></li>
+                                        <li>оценка: 7.7/10</li>
+                                        <li>
+                                            <div>
+                                                <p class="rub">29.999 ₽</p>
+                                                <input type="button" value="в корзину">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+								<div class="slide">
+                                    <img src="t7.jpg" alt="img">
+                                    <ul>
+                                        <li><H3>Ноутбук Lenovo Legion Y520-15IKBN</H3></li>
+                                        <li>оценка: 0/10</li>
+                                        <li>
+                                            <div>
+                                                <p class="rub">55.555 ₽</p>
+                                                <input type="button" value="в корзину">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+								<div class="slide">
+                                    <img src="t5.jpg" alt="img">
+                                    <ul>
+                                        <img class="sale" src="sale.png" alt="img">
+                                        <li><H3>ПК DEXP Mars E186</H3></li>
+                                        <li>оценка: 5/10</li>
+                                        <li>
+                                            <div>
+                                                <p class="rub"><del>32.000 ₽</del> 29.999 ₽</p>
+                                                <input type="button" value="в корзину">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+								<div class="slide">
+                                    <img src="t8.jpg" alt="img">
+                                    <ul>
+                                        <li><H3>Мой ПК</H3></li>
+                                        <li>оценка: ∞/10</li>
+                                        <li>
+                                            <div>
+                                                <p class="rub">бесценно</p>
+                                                <input type="button" value="в корзину">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <input type="button" value="Влево" id="prew1">
+                    <input type="button" value="Вправо" id="next1">
+                </div>
+            </section>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+         </div>
+    </footer>
+</div>
+</body>
 </html>
+<script>
+
+    var left = 0,
+        track = document.getElementById('slider-track'),
+        track1 = document.getElementById('slider-track1');
+
+
+
+
+    var interval_1 = setInterval(function () {
+        sliderRight(track)
+    }, 5000);
+
+    track.addEventListener('mouseenter', function () {
+        clearInterval(interval_1)
+    });
+
+    track.addEventListener('mouseleave', function () {
+        interval_1 = setInterval(function () {
+            sliderRight(track)
+        }, 5000)
+    });
+
+
+
+    var interval_2 = setInterval(function () {
+        sliderRight(track1)
+    }, 4000);
+
+    track1.addEventListener('mouseenter', function () {
+        clearInterval(interval_2)
+    });
+
+    track1.addEventListener('mouseleave', function () {
+        interval_2 = setInterval(function () {
+            sliderRight(track1)
+        }, 4000)
+    });
+
+
+    document.getElementById('next').onclick = function () {
+        sliderLeft(track);
+        clearInterval(interval_1)
+    };
+    document.getElementById('prew').onclick = function () {
+        sliderRight(track);
+        clearInterval(interval_1);
+    };
+    document.getElementById('next1').onclick = function () {
+        sliderLeft(track1);
+        clearInterval(interval_2)
+    };
+    document.getElementById('prew1').onclick = function () {
+        sliderRight(track1);
+        clearInterval(interval_2)
+    };
+
+    function sliderLeft(track){
+        left = left - 330;
+        if (left < -660) {
+            left = 0;
+        }
+        track.style.left = left +'px';
+    }
+    function sliderRight(track){
+        left = left + 330;
+        if (left > 0) {
+            left = -660;
+        }
+        track.style.left = left +'px';
+    }
+</script>

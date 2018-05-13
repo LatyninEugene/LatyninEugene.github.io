@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Электроник</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="form_style.css" type="text/css">
+</head>
+<body>
+<div class="container">
+    <a href="index.html"><h1>Электроник</h1></a>
+    <div class="form-wr">
+        <div id="form-track">
+            <div class="form-group">
+                <h2>Войти</h2>
+                <hr>
+                <form action="profile.html" method="get">
+                    <div class="form-log">
+                        <label>Email</label>
+                        <input type="text">
+                        <label>Пароль</label>
+                        <input type="password">
+                        <div  class="help"><a href="#">Забыли пароль?</a></div>
+                        <input type="submit" value="Войти" class="btn">
+                    </div>
+                </form>
+                <hr>
+                <div  class="help"><a href="#" id="reg">регистрация</a></div>
+            </div>
+            <div class="form-group">
+                <h2>Регистрация</h2>
+                <hr>
+                <form method="post">
+                    <div class="form-reg">
+                        <label>Email</label>
+                        <input type="text" name="email">
+                        <label>Введите пароль</label>
+                        <input type="password">
+                        <label>Повторите пароль</label>
+                        <input type="password" name="password">
+                        <input type="submit" value="Зарегистрироваться" class="btn">
+                    </div>
+                </form>
+                <hr>
+                <div  class="help"><a href="#" id="in">войти</a></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+<script>
+    var left = 0,
+        track = document.getElementById('form-track');
+
+    document.getElementById('reg').onclick = function () {
+        slideReg(track)
+    };
+    document.getElementById('in').onclick = function () {
+        slideIn(track)
+    };
+    function slideReg(track){
+        if (left != 1) {
+            track.style.top = -400 +'px';
+        }
+        left = 1
+    }
+    function slideIn(track){
+        if (left != 0) {
+            track.style.top = 0 +'px';
+        }
+        left = 0
+    }
+</script>
